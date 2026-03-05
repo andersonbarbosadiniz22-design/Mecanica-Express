@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mechanic",
+      "description": "Professional mechanic working on a high-end car engine",
+      "imageUrl": "https://picsum.photos/seed/mech1/1200/800",
+      "imageHint": "automotive engine"
+    },
+    {
+      "id": "engine-diagram",
+      "description": "Detailed technical diagram of a car engine",
+      "imageUrl": "https://picsum.photos/seed/mech2/800/600",
+      "imageHint": "engine diagram"
+    },
+    {
+      "id": "mechanical-tools",
+      "description": "Set of professional automotive tools",
+      "imageUrl": "https://picsum.photos/seed/mech3/800/600",
+      "imageHint": "mechanical tools"
+    },
+    {
+      "id": "brake-system",
+      "description": "Close up of a car disc brake system",
+      "imageUrl": "https://picsum.photos/seed/mech4/800/600",
+      "imageHint": "car brakes"
+    },
+    {
+      "id": "electronics-diagnosis",
+      "description": "Mechanic using a diagnostic tablet on a car",
+      "imageUrl": "https://picsum.photos/seed/mech5/800/600",
+      "imageHint": "car diagnosis"
+    },
+    {
+      "id": "apostila-preview",
+      "description": "Digital tablet showing a technical manual PDF",
+      "imageUrl": "https://picsum.photos/seed/mech6/800/600",
+      "imageHint": "digital manual"
+    }
+  ]
 }
