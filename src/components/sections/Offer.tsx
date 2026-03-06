@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, ShieldCheck, Download, Clock } from "lucide-react";
 
@@ -31,7 +30,7 @@ export function Offer() {
               <div className="flex flex-col items-center justify-center p-8 bg-secondary/30 rounded-2xl border border-white/5">
                 <p className="text-muted-foreground line-through text-lg">De R$97</p>
                 <p className="text-5xl font-bold text-white mb-2">Por apenas</p>
-                <p className="text-6xl font-bold text-primary mb-6">R$19,90</p>
+                <p className="text-6xl font-bold text-primary mb-6">R$24,90</p>
                 
                 <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-16 text-xl rounded-xl uppercase red-glow group">
                   BAIXAR AGORA

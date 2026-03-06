@@ -48,7 +48,7 @@ O que o cliente vai aprender:
 
 Oferta Especial:
 - Preço normal: R$97
-- Preço promocional: Por apenas R$19,90
+- Preço promocional: Por apenas R$24,90
 - Inclui: Acesso imediato, download em PDF, material completo.
 
 Garantia:
