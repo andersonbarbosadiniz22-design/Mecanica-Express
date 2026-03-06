@@ -1,5 +1,15 @@
 
+"use client";
+
+import { useState, useEffect } from 'react';
+
 export function Footer() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="py-12 px-4 bg-background border-t border-white/5">
       <div className="container mx-auto">
@@ -26,7 +36,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-white/5 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Mecânica Express. Todos os direitos reservados.</p>
+          <p>© {year || '...'} Mecânica Express. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

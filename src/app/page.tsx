@@ -10,13 +10,12 @@ import { Guarantee } from "@/components/sections/Guarantee";
 import { Footer } from "@/components/sections/Footer";
 import { Button } from "@/components/ui/button";
 
-// Carregamento dinâmico para componentes que não são críticos para o LCP ou que possuem muito JS
 const Gallery = dynamic(() => import('@/components/sections/Gallery').then(mod => mod.Gallery), {
   loading: () => <div className="h-96 w-full animate-pulse bg-secondary/20" />,
 });
 
 const ChatAssistant = dynamic(() => import('@/components/sections/ChatAssistant').then(mod => mod.ChatAssistant), {
-  ssr: false, // Componente de chat é puramente cliente
+  ssr: false,
 });
 
 export default function Home() {
@@ -35,6 +34,7 @@ export default function Home() {
 
       <article>
         <Hero />
+        {/* Oferta movida para cima para maior conversão */}
         <Offer />
         <Problem />
         <Solution />
