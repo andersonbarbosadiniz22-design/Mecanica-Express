@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, ShieldCheck, Download, Clock } from "lucide-react";
 
 export function Offer() {
+  const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";
+
   return (
     <section className="py-24 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
@@ -32,9 +35,11 @@ export function Offer() {
                 <p className="text-5xl font-bold text-white mb-2">Por apenas</p>
                 <p className="text-6xl font-bold text-primary mb-6">R$24,90</p>
                 
-                <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-16 text-xl rounded-xl uppercase red-glow group">
-                  BAIXAR AGORA
-                  <Download className="ml-2 w-6 h-6 group-hover:translate-y-1 transition-transform" />
+                <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-16 text-xl rounded-xl uppercase red-glow group">
+                  <a href={checkoutUrl} className="flex items-center">
+                    BAIXAR AGORA
+                    <Download className="ml-2 w-6 h-6 group-hover:translate-y-1 transition-transform" />
+                  </a>
                 </Button>
                 
                 <p className="mt-4 text-xs text-muted-foreground flex items-center gap-1">

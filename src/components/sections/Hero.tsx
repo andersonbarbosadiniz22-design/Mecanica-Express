@@ -6,6 +6,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Hero() {
   const heroImg = PlaceHolderImages.find(img => img.id === 'hero-mechanic')!;
+  const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-16 px-4 industrial-pattern overflow-hidden">
@@ -40,8 +41,8 @@ export function Hero() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold h-14 px-8 text-lg rounded-md red-glow uppercase tracking-wide">
-              QUERO ACESSO AGORA
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold h-14 px-8 text-lg rounded-md red-glow uppercase tracking-wide">
+              <a href={checkoutUrl}>QUERO ACESSO AGORA</a>
             </Button>
           </div>
         </div>
