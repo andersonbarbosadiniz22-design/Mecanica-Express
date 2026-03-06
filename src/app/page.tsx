@@ -1,4 +1,3 @@
-
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { Solution } from "@/components/sections/Solution";
@@ -25,12 +24,12 @@ export default function Home() {
       </nav>
 
       <Hero />
+      <Offer />
       <Problem />
       <Solution />
       <Features />
       <Gallery />
       <Testimonials />
-      <Offer />
       <Guarantee />
       
       {/* Final CTA Section */}
