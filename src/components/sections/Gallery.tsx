@@ -5,7 +5,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Gallery() {
-  // Filtermos apenas as imagens desejadas, removendo o sistema de freios (brake-system)
+  // Filtramos apenas as imagens desejadas, mantendo a galeria limpa
   const galleryImages = PlaceHolderImages.filter(img => 
     ['engine-diagram', 'mechanical-tools', 'electronics-diagnosis', 'apostila-preview'].includes(img.id)
   );
@@ -24,9 +24,7 @@ export function Gallery() {
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 data-ai-hint={img.imageHint}
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <span className="text-xs text-white/80 font-medium uppercase tracking-widest">{img.description}</span>
-              </div>
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
           ))}
         </div>
