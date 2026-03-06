@@ -5,9 +5,8 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Gallery() {
-  const galleryImages = PlaceHolderImages.filter(img => 
-    ['engine-diagram', 'mechanical-tools', 'electronics-diagnosis', 'apostila-preview'].includes(img.id)
-  );
+  const galleryIds = ['engine-diagram', 'mechanical-tools', 'electronics-diagnosis', 'apostila-preview'];
+  const galleryImages = PlaceHolderImages.filter(img => galleryIds.includes(img.id));
 
   return (
     <section className="py-24 px-4" id="galeria">
@@ -32,9 +31,6 @@ export function Gallery() {
                 loading="lazy"
                 data-ai-hint={img.imageHint}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <span className="text-white text-xs font-bold uppercase tracking-widest">{img.description}</span>
-              </div>
             </div>
           ))}
         </div>

@@ -34,7 +34,6 @@ export default function Home() {
 
       <article>
         <Hero />
-        {/* Oferta movida para cima para maior conversão */}
         <Offer />
         <Problem />
         <Solution />

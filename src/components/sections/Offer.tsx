@@ -1,4 +1,6 @@
 
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, ShieldCheck, Download, Clock } from "lucide-react";
 
