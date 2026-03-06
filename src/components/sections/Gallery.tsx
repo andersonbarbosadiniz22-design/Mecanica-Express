@@ -1,10 +1,13 @@
 
+"use client";
+
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Gallery() {
+  // Filtermos apenas as imagens desejadas, removendo o sistema de freios (brake-system)
   const galleryImages = PlaceHolderImages.filter(img => 
-    ['engine-diagram', 'mechanical-tools', 'brake-system', 'electronics-diagnosis', 'apostila-preview'].includes(img.id)
+    ['engine-diagram', 'mechanical-tools', 'electronics-diagnosis', 'apostila-preview'].includes(img.id)
   );
 
   return (
