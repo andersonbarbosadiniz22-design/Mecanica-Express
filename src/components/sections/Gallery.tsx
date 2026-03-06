@@ -12,13 +12,13 @@ export function Gallery() {
   return (
     <section className="py-24 px-4" id="galeria">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">CONTEÚDO ILUSTRADO</h2>
           <p className="text-muted-foreground mt-4">Confira como o material é organizado para facilitar seu aprendizado.</p>
-        </div>
+        </header>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {galleryImages.map((img, i) => (
+          {galleryImages.map((img) => (
             <div 
               key={img.id} 
               className="relative aspect-square overflow-hidden rounded-xl border border-white/5 group bg-card"
