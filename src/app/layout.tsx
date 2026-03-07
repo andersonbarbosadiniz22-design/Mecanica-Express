@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
@@ -33,11 +32,20 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://mecanicaexpress.com.br',
     siteName: 'Mecânica Express',
+    images: [
+      {
+        url: 'https://scontent.fcpq10-1.fna.fbcdn.net/v/t39.30808-6/647142877_891433003694899_9082168271198037832_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=snKdicqYEeIQ7kNvwHd9V9N&_nc_ohc=snKdicqYEeIQ7kNvwHd9V9N&_nc_oc=AdlPdlX5r_FbSi_lA1uErEyqEHc8ue2YbiTDAZEsXVdOOMQfXg6Ki_QzDq2UQtrfEpmhh5kIvWqUE1ziFEpw4dgx&_nc_zt=23&_nc_ht=scontent.fcpq10-1.fna&_nc_gid=zTCr9LeoZARsy4Q6YQQAQA&_nc_ss=8&oh=00_Afw_XC6e7OEWHg3LyF7-ra-E1n56q0OBWH0-E31nG7QDTA&oe=69B10FFC',
+        width: 1200,
+        height: 630,
+        alt: 'Mecânica Express - Apostilas em PDF',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pacote de Apostilas de Mecânica Automotiva',
     description: 'Domine a mecânica de carros com material técnico em PDF.',
+    images: ['https://scontent.fcpq10-1.fna.fbcdn.net/v/t39.30808-6/647142877_891433003694899_9082168271198037832_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=snKdicqYEeIQ7kNvwHd9V9N&_nc_ohc=snKdicqYEeIQ7kNvwHd9V9N&_nc_oc=AdlPdlX5r_FbSi_lA1uErEyqEHc8ue2YbiTDAZEsXVdOOMQfXg6Ki_QzDq2UQtrfEpmhh5kIvWqUE1ziFEpw4dgx&_nc_zt=23&_nc_ht=scontent.fcpq10-1.fna&_nc_gid=zTCr9LeoZARsy4Q6YQQAQA&_nc_ss=8&oh=00_Afw_XC6e7OEWHg3LyF7-ra-E1n56q0OBWH0-E31nG7QDTA&oe=69B10FFC'],
   },
 };
 
