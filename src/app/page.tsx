@@ -14,9 +14,7 @@ const Gallery = dynamic(() => import('@/components/sections/Gallery').then(mod =
   loading: () => <div className="h-96 w-full animate-pulse bg-secondary/20" />,
 });
 
-const ChatAssistant = dynamic(() => import('@/components/sections/ChatAssistant').then(mod => mod.ChatAssistant), {
-  ssr: false,
-});
+const ChatAssistant = dynamic(() => import('@/components/sections/ChatAssistant').then(mod => mod.ChatAssistant));
 
 export default function Home() {
   const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";

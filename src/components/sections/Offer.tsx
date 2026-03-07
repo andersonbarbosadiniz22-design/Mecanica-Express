@@ -38,7 +38,7 @@ export function Offer() {
                 <span className="text-6xl font-bold text-primary mb-6">R$24,90</span>
                 
                 <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-16 text-xl rounded-xl uppercase red-glow group" aria-label="Comprar apostila por R$24,90">
-                  <a href={checkoutUrl} className="flex items-center">
+                  <a href={checkoutUrl} className="flex items-center justify-center">
                     BAIXAR AGORA
                     <Download className="ml-2 w-6 h-6 group-hover:translate-y-1 transition-transform" aria-hidden="true" />
                   </a>
