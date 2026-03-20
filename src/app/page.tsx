@@ -1,4 +1,3 @@
-
 import dynamic from 'next/dynamic';
 import { Hero } from "@/components/sections/Hero";
 import { Offer } from "@/components/sections/Offer";
@@ -17,7 +16,7 @@ const Gallery = dynamic(() => import('@/components/sections/Gallery').then(mod =
 const ChatAssistant = dynamic(() => import('@/components/sections/ChatAssistant').then(mod => mod.ChatAssistant));
 
 export default function Home() {
-  const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";
+  const checkoutUrl = "https://go.perfectpay.com.br/PPU38CQ980A";
 
   return (
     <main className="min-h-screen">

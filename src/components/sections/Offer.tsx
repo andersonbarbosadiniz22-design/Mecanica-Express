@@ -1,11 +1,8 @@
-
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, ShieldCheck, Download, Clock } from "lucide-react";
 
 export function Offer() {
-  const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";
+  const checkoutUrl = "https://go.perfectpay.com.br/PPU38CQ980A";
 
   return (
     <section className="py-24 px-4 bg-background">

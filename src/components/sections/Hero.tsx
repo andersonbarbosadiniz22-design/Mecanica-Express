@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
@@ -6,7 +5,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Hero() {
   const heroImg = PlaceHolderImages.find(img => img.id === 'hero-mechanic')!;
-  const checkoutUrl = "https://pay.kiwify.com.br/DiQkhvP";
+  const checkoutUrl = "https://go.perfectpay.com.br/PPU38CQ980A";
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center pt-24 pb-16 px-4 industrial-pattern overflow-hidden">
